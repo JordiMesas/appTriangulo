@@ -1,12 +1,12 @@
 <?php
 
-require_once '../Model/areaPerimeter.php';
+require_once '../Model/triangulo.php';
 
 
 $base = $_POST['base'];
 $altura = $_POST['altura'];
 
-$resultPerimeter = new Perimeter($base,$altura);
+$resultPerimeter = new Triangulo($base,$altura);
 
 echo $resultPerimeter->getBase() ."<br>";
 
@@ -18,10 +18,5 @@ echo $resultPerimeter->CalculatePerimeter();
 
 
 
-echo "resultado de rectangulo <br>";
-
-echo $resultPerimeter->areaRectangulo() ."<br>";
-
-echo $resultPerimeter->CalculatePerimeterRectangulo();
 
 

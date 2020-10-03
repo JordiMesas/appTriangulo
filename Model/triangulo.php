@@ -1,6 +1,6 @@
 <?php
 
-Class Perimeter{
+Class Triangulo{
     private $base;
     private $altura;
     public function __construct($base , $altura){
@@ -52,20 +52,6 @@ Class Perimeter{
         $h = sqrt($r);
         $result = $b + $a +  $h ;
         return $result;
-    }
-
-    //Rectangulo
-
-    public function areaRectangulo(){
-        $area= ($this->base * $this->altura);        
-        return $area;
-    }
-
-    public function CalculatePerimeterRectangulo(){
-        $b = $this->base;
-        $a =  $this->altura;
-        $resultR = 2 * ($b + $a);
-        return $resultR;
     }
 
 }
